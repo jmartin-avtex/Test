@@ -47,7 +47,7 @@ table td
 {
 	width: 100%;
 	height: 79px;
-	background: url(images/headerbkgnd.gif) center right no-repeat;
+	background: url(https://paypage.epxuap.com/images/headerbkgnd.gif) center right no-repeat;
 	text-align: center;
 }
 
@@ -61,7 +61,7 @@ table td
 
 #headerBar
 {
-	background : url(images/topbarspn.gif) center left repeat-x;
+	background : url(https://paypage.epxuap.com/images/topbarspn.gif) center left repeat-x;
 	height: 6px;
 	vertical-align: middle;
 }
@@ -71,7 +71,7 @@ table td
 	position: absolute;
 	left: 5px;
 	top: 0px;
-	background: url(images/slogo.gif) center left no-repeat;
+	background: url(https://paypage.epxuap.com/images/slogo.gif) center left no-repeat;
 	height: 75px;
 	width: 150px;
 }
@@ -107,13 +107,13 @@ table td
 
 #footerBarRow
 {
-	background-image: url(images/bbarslice.gif); 
+	background-image: url(https://paypage.epxuap.com/images/bbarslice.gif); 
 	width: 100%;
 }
 
 #footerBar
 {
-	background: url(images/bottombar-nohome.gif) center right no-repeat;
+	background: url(https://paypage.epxuap.com/images/bottombar-nohome.gif) center right no-repeat;
 	height:20px;
 	width:742px;
 }
@@ -342,12 +342,12 @@ table td
 	width: 100%;
 	text-align: center;
 	height: 79px;
-	background: url(images/headerbkgnd.gif) center right no-repeat;
+	background: url(https://paypage.epxuap.com/images/headerbkgnd.gif) center right no-repeat;
 }
 
 #headerBarRcpt
 {
-	background : url(images/topbarspn.gif) center left repeat-x;
+	background : url(https://paypage.epxuap.com/images/topbarspn.gif) center left repeat-x;
 	height: 6px;
 	vertical-align: middle;
 }
@@ -359,7 +359,7 @@ table td
 	top: 0px;
 	height: 75px;
 	width: 150px;
-	background: url(images/slogo.gif) center left no-repeat;
+	background: url(https://paypage.epxuap.com/images/slogo.gif) center left no-repeat;
 }
 
 #hdr0LblRcpt
@@ -405,13 +405,13 @@ table td
 
 #footerBarRowRcpt
 {
-	background-image: url(images/bbarslice.gif);
+	background-image: url(https://paypage.epxuap.com/images/bbarslice.gif);
 	width:100%;
 }
 
 #footerBarRcpt
 {
-	background: url(images/bottombar-nohome.gif) center right no-repeat;
+	background: url(https://paypage.epxuap.com/images/bottombar-nohome.gif) center right no-repeat;
 	height: 20px;
 	width: 742px;
 }
