@@ -142,8 +142,8 @@ function initPage()
 	document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
 	
 	if (document.getElementById("user_data_7").value == "ACHSTORAGE") {
-	    document.getElementById('radio2RB').styles.display = "none";
-	    document.getElementById('radio4RB').styles.display = "none";
+        document.getElementById('radio2RB').style.display = 'none';
+        document.getElementById('radio4RB').style.display = 'none';
 	    document.getElementById('radio5RB').onclick = tranTypeRadioClick;
         eventFire(document.getElementById('radio5RB'), 'click');
     } else {
