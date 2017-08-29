@@ -78,7 +78,6 @@ function cancelBtn_Click()
 
 function initPage()
 {
-	debugger;
 	// Header Controls
 	document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange - BRIC Storage Demo';
 	// see function hdrHprLnk_Click to set Redirect for hdrHprLnk
@@ -142,10 +141,16 @@ function initPage()
 	// Footer Controls
 	document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
 	
-	
-	document.getElementById('radio2RB').onclick = tranTypeRadioClick;
-	document.getElementById('radio4RB').onclick = tranTypeRadioClick;
-	document.getElementById('radio5RB').onclick = tranTypeRadioClick;
+	if (document.getElementById("user_data_7").value == "ACHSTORAGE") {
+	    document.getElementById('radio2RB').styles.display = "none";
+	    document.getElementById('radio4RB').styles.display = "none";
+	    document.getElementById('radio5RB').onclick = tranTypeRadioClick;
+        eventFire(document.getElementById('radio5RB'), 'click');
+    } else {
+	    document.getElementById('radio2RB').onclick = tranTypeRadioClick;
+	    document.getElementById('radio4RB').onclick = tranTypeRadioClick;
+	    document.getElementById('radio5RB').onclick = tranTypeRadioClick;
+    }
 	
 	document.getElementById('debitDisclaimerRow').style.display = "none";
 	
@@ -174,6 +179,16 @@ function initPage()
 	}
 	
 	document.getElementById('submitBtn').onclick = onSubmit;
+}
+
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
 }
 
 function tranTypeRadioClick(e)
