@@ -78,6 +78,7 @@ function cancelBtn_Click()
 
 function initPage()
 {
+	debugger;
 	// Header Controls
 	document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange - BRIC Storage Demo';
 	// see function hdrHprLnk_Click to set Redirect for hdrHprLnk
