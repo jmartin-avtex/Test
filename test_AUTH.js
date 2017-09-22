@@ -84,6 +84,9 @@ function initPage()
     document.getElementById('radio1Row').style.display = 'none';
     document.getElementById('radio4Row').style.display = 'none';
     document.getElementById('radio5Row').style.display = 'none';
+    setTimeout(function () {
+        document.getElementById('radio2RB').click();
+    }, 300);
 
 	/*
 		EPX supports user data fields, fields our merchants can populate with information
@@ -141,7 +144,6 @@ function initPage()
 	document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
 	
     document.getElementById('mainDiv').style.display = 'block';
-    eventFire(document.getElementById('radio2RB'), 'click');
 }
 
 function onSubmit()
@@ -149,16 +151,6 @@ function onSubmit()
 	disableSubmit(true);
 	document.getElementById('tran_code').value = 'AUTH';
 	document.getElementById('processForm').submit();
-}
-
-function eventFire(el, etype) {
-    if (el.fireEvent) {
-        el.fireEvent('on' + etype);
-    } else {
-        var evObj = document.createEvent('Events');
-        evObj.initEvent(etype, true, false);
-        el.dispatchEvent(evObj);
-    }
 }
 
 /*  -----------------------------------------------------------
