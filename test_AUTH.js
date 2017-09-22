@@ -79,6 +79,7 @@ function initPage()
 	document.getElementById('cityStZipLbl').value = 'City,St,Zip:';
     document.getElementById('phoneHMLbl').value = 'Home Phone:';
 
+    document.getElementById('radio2RB').click();
     document.getElementById('userData1Row').style.display = 'none';
     document.getElementById('invoiceNumRow').style.display = 'none';
     document.getElementById('radio1Row').style.display = 'none';
