@@ -92,6 +92,8 @@ function initPage()
 
 
     document.getElementById('userData1Row').style.display = 'none';
+    document.getElementById('acctTypeSRB').style.display = 'none';
+    document.getElementById('acctTypeSLbl').style.display = 'none';
 
 	/*
 		EPX supports user data fields, fields our merchants can populate with information
