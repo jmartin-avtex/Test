@@ -83,6 +83,7 @@ function initPage()
     document.getElementById('invoiceNumRow').style.display = 'none';
     document.getElementById('radio1Row').style.display = 'none';
     document.getElementById('radio4Row').style.display = 'none';
+    document.getElementById('radio5Row').style.display = 'none';
 
 	/*
 		EPX supports user data fields, fields our merchants can populate with information
