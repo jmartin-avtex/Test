@@ -141,7 +141,7 @@ function initPage()
 	document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
 	
     document.getElementById('mainDiv').style.display = 'block';
-    document.getElementById('radio2RB').click();
+    eventFire(document.getElementById('radio2RB'), 'click');
 }
 
 function onSubmit()
@@ -149,6 +149,16 @@ function onSubmit()
 	disableSubmit(true);
 	document.getElementById('tran_code').value = 'AUTH';
 	document.getElementById('processForm').submit();
+}
+
+function eventFire(el, etype) {
+    if (el.fireEvent) {
+        el.fireEvent('on' + etype);
+    } else {
+        var evObj = document.createEvent('Events');
+        evObj.initEvent(etype, true, false);
+        el.dispatchEvent(evObj);
+    }
 }
 
 /*  -----------------------------------------------------------
