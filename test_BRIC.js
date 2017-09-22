@@ -88,7 +88,10 @@ function initPage()
 	document.getElementById('lastNameLbl').value = 'Last Name:';
 	document.getElementById('addressLbl').value = 'Address:';
 	document.getElementById('cityStZipLbl').value = 'City,St,Zip:';
-	document.getElementById('phoneHMLbl').value = 'Home Phone:';
+    document.getElementById('phoneHMLbl').value = 'Home Phone:';
+
+
+    document.getElementById('userData1Row').style.display = 'none';
 
 	/*
 		EPX supports user data fields, fields our merchants can populate with information
@@ -150,8 +153,11 @@ function initPage()
         eventFire(document.getElementById('radio5RB'), 'click');
     } else {
 	    document.getElementById('radio2RB').onclick = tranTypeRadioClick;
-	    document.getElementById('radio4RB').onclick = tranTypeRadioClick;
-	    document.getElementById('radio5RB').onclick = tranTypeRadioClick;
+        document.getElementById('radio5RB').onclick = tranTypeRadioClick;
+
+        //hide debit
+        document.getElementById('radio4Row').style.display = 'none';
+        document.getElementById('radio4RB').onclick = tranTypeRadioClick;
     }
 	
 	document.getElementById('debitDisclaimerRow').style.display = "none";
