@@ -78,8 +78,7 @@ function initPage()
 	document.getElementById('addressLbl').value = 'Address:';
 	document.getElementById('cityStZipLbl').value = 'City,St,Zip:';
     document.getElementById('phoneHMLbl').value = 'Home Phone:';
-
-    document.getElementById('radio2RB').click();
+    
     document.getElementById('userData1Row').style.display = 'none';
     document.getElementById('invoiceNumRow').style.display = 'none';
     document.getElementById('radio1Row').style.display = 'none';
@@ -141,7 +140,8 @@ function initPage()
 	// Footer Controls
 	document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
 	
-	document.getElementById('mainDiv').style.display = 'block';
+    document.getElementById('mainDiv').style.display = 'block';
+    document.getElementById('radio2RB').click();
 }
 
 function onSubmit()
