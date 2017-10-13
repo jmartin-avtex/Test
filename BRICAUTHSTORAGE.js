@@ -496,9 +496,9 @@ var BRICAUTH;
 
 /* Image/Text to display when Waiting */
 function displayWait() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.displayWait();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.displayWait();
     }
 }
@@ -506,36 +506,36 @@ function displayWait() {
 
 /* Action to take when hdrHprLnk is Clicked */
 function hdrHprLnk_Click() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.hdrHprLnk_Click();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.hdrHprLnk_Click();
     }
 }
 
 /* Action to take when resetBtn is Clicked */
 function resetBtn_Click() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.resetBtn_Click();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.resetBtn_Click();
     }
 }
 
 /* Action to take when cancelBtn is Clicked */
 function cancelBtn_Click() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.cancelBtn_Click();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.cancelBtn_Click();
     }
 }
 
 function initPage() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.initStyling();
         BRICSTORAGE.Functions.prototype.initPage();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.initStyling();
         BRICAUTH.Functions.prototype.initPage();
     }
@@ -547,17 +547,17 @@ function initPage() {
 
 /* Action to take when hdrHprLnk is Clicked */
 function hdrHprLnkRcpt_Click() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.hdrHprLnkRcpt_Click();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.hdrHprLnkRcpt_Click();
     }
 }
 
 function initRcptPage() {
-    if (Settings.TRAN_GROUP == "STORAGE" || Settings.TRAN_GROUP == "ACHSTORAGE") {
+    if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.initRcptPage();
-    } else if (Settings.TRAN_GROUP == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.initRcptPage();
     }
 }
