@@ -55,7 +55,7 @@ table {
 }
 
 #hdr0Lbl {
-    color: #1834C4;
+    color: #31708f;
     font-size: 12pt;
     font-weight: bold;
     line-height: 79px;
@@ -73,14 +73,14 @@ table {
     top: 0px;
     background: url(Indiana_Toll_Road_logo_clr.png) center left no-repeat;
     height: 75px;
-    width: 150px;
+    width: 260px;
 }
 
 #hdrHprLnk {
     position: absolute;
     top: 0px;
     right: 30px;
-    color: #1834C4;
+    color: #31708f;
     text-decoration: none;
 }
 
@@ -417,7 +417,7 @@ table {
 }
 
 #hdr0LblRcpt {
-    color: #1834C4;
+    color: #31708f;
     font-size: 12pt;
     font-weight: bold;
     line-height: 79px;
@@ -427,7 +427,7 @@ table {
     position: absolute;
     top: 0px;
     right: 30px;
-    color: #1834C4;
+    color: #31708f;
     text-decoration: none;
 }
 
@@ -515,7 +515,6 @@ table {
     position: relative;
     height: 40px;
 }
-
 #respTxtRow {
     height: 30px;
 }
@@ -523,7 +522,7 @@ table {
 #responseTextLbl {
     position: relative;
     width: 350px;
-    color: #1834C4;
+    color: #31708f;
     font-size: 12pt;
     font-weight: bold;
     border: 0px;
