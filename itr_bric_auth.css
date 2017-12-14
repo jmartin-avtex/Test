@@ -7,7 +7,6 @@ html, body {
     padding: 0;
     border: 0;
     height: 100%;
-    background:green;
 }
 
 * {
@@ -72,7 +71,7 @@ table {
     position: absolute;
     left: 5px;
     top: 0px;
-    background: url(https://paypage.epxuap.com/images/slogo.gif) center left no-repeat;
+    background: url(Indiana_Toll_Road_logo_clr.png) center left no-repeat;
     height: 75px;
     width: 150px;
 }
