@@ -350,6 +350,13 @@ table {
     width: 25em;
 }
 
+#buttonRow {
+    padding-top:30px;
+}
+#button2Row {
+    padding-bottom:15px;
+}
+
 #cancelBtn, #cancel2Btn {
    float:right;
 }
@@ -360,7 +367,7 @@ table {
     margin-right:15px;
     color: white;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
     padding: 11px 23px;
     background: #ed8b00;
@@ -369,6 +376,7 @@ table {
 .mainButton:hover {
     background: #fca323;
     border: 1px solid #fca323;
+    cursor:pointer;
 }
 
 
