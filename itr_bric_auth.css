@@ -369,7 +369,7 @@ table {
 
 #resetBtn, #reset2Btn {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 90px;
 }
 #reset2Btn {
@@ -378,7 +378,7 @@ table {
 
 #cancelBtn, #cancel2Btn {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 0px;
 }
 #cancel2Btn {
