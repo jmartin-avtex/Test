@@ -350,43 +350,14 @@ table {
     width: 25em;
 }
 
-#buttonRow, #button2Row {
-    height: 30px;
-    position: relative;
-}
-
-#submit2Btn {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-#submitBtn {
-    position: absolute;
-    top: 15px;
-    left: 0px;
-}
-
-
-#resetBtn, #reset2Btn {
-    position: absolute;
-    top: 15px;
-    left: 90px;
-}
-#reset2Btn {
-    top: 0;
-}
-
 #cancelBtn, #cancel2Btn {
-    position: absolute;
-    top: 15px;
-    right: 0px;
+   float:right;
 }
-#cancel2Btn {
-    top: 0;
-}
+
 
 .mainButton {
-    width: 75px;
+    display:inline-block;
+    margin-right:15px;
     color: white;
     font-size: 15px;
     font-weight: 500;
