@@ -10,8 +10,9 @@ html, body {
 }
 
 * {
-    font-family: verdana, arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 10pt;
+    color: #414042;
 }
 
 /*  //////////////////////////////////////
@@ -31,7 +32,6 @@ table {
     }
 
 #mainTable {
-    background-color: #ffffff;
     height: 100%;
     width: 100%;
     border: 0;
@@ -55,7 +55,7 @@ table {
 }
 
 #hdr0Lbl {
-    color: #31708f;
+    color: #414042;
     font-size: 12pt;
     font-weight: bold;
     line-height: 79px;
@@ -107,7 +107,6 @@ table {
     position: relative;
     bottom: 5px;
     right: 5px;
-    color: #11278F;
     font-size: 8pt;
 }
 
@@ -200,7 +199,7 @@ table {
 .hyprLink {
     position: relative;
     left: 10px;
-    color: #11278F;
+    color: #31708f;
     font-size: 8pt;
 }
 
@@ -234,17 +233,16 @@ table {
     position: relative;
     width: 150px;
     text-align: right;
-    color: #11278F;
     border: 0px;
 }
 
 .mainTextBox {
     position: relative;
     left: 5px;
-    color: #000000;
+    color: #414042;
     background-color: #FFFFFF;
     text-align: left;
-    border: 1px solid #000000;
+    border: 1px solid #414042;
 }
 
 
@@ -344,7 +342,7 @@ table {
     position: relative;
     font-size: 12pt;
     font-weight: bold;
-    color: #11278F;
+    color: #414042;
     border: 0px;
     width: 25em;
 }
@@ -418,7 +416,6 @@ table {
 }
 
 #hdr0LblRcpt {
-    color: #31708f;
     font-size: 12pt;
     font-weight: bold;
     line-height: 79px;
@@ -454,7 +451,6 @@ table {
     position: relative;
     bottom: 5px;
     right: 5px;
-    color: #11278F;
     font-size: 8pt;
 }
 
@@ -523,7 +519,7 @@ table {
 #responseTextLbl {
     position: relative;
     width: 350px;
-    color: #31708f;
+    color: #414042;
     font-size: 12pt;
     font-weight: bold;
     border: 0px;
@@ -541,7 +537,7 @@ table {
     position: relative;
     width: 190px;
     text-align: right;
-    color: #11278F;
+    color: #414042;
     border: 0px;
 }
 
@@ -549,7 +545,7 @@ table {
     position: relative;
     left: 5px;
     width: 188px;
-    color: #11278F;
+    color: #414042;
     text-align: left;
     border: 0px;
 }
@@ -588,7 +584,7 @@ table {
     position: absolute;
     text-align: left;
     background-color: Transparent;
-    color: #11278F;
+    color: #414042;
     left: 4px;
     width: 80px;
     font-size: 8pt;
@@ -600,7 +596,7 @@ table {
     position: absolute;
     text-align: center;
     background-color: Transparent;
-    color: #11278F;
+    color: #414042;
     width: 100%;
     border: 0px;
     left: 0px;
@@ -610,7 +606,7 @@ table {
     position: absolute;
     text-align: right;
     background-color: Transparent;
-    color: #11278F;
+    color: #414042;
     right: 4px;
     width: 120px;
     font-size: 8pt;
