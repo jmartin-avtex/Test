@@ -45,6 +45,7 @@ table {
 
 #headerTable {
     width: 100%;
+    box-shadow: rgba(0,0,0,.117647) 0 1px 3px;
 }
 
 #headerDiv {
@@ -65,6 +66,7 @@ table {
     background: url(https://paypage.epxuap.com/images/topbarspn.gif) center left repeat-x;
     height: 6px;
     vertical-align: middle;
+    display:none;
 }
 
 #hdrLogoImg {
