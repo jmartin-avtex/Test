@@ -51,8 +51,7 @@ table {
 #headerDiv {
     width: 100%;
     height: 79px;
-    background: url(https://paypage.epxuap.com/images/headerbkgnd.gif) center right no-repeat;
-    text-align: center;
+    padding-left:275px;
 }
 
 #hdr0Lbl {
