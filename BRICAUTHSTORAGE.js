@@ -125,7 +125,8 @@ var BRICSTORAGE;
                 document.getElementById('radio2RB').style.display = 'none';
                 document.getElementById('radio4RB').style.display = 'none';
                 document.getElementById('radio5RB').onclick = this.tranTypeRadioClick;
-                this.eventFire(document.getElementById('radio5RB'), 'click');
+                document.getElementById('radio5RB').checked = true;
+                Functions.prototype.eventFire(document.getElementById('radio5RB'), 'click');
             }
             else {
                 document.getElementById('radio2RB').onclick = this.tranTypeRadioClick;
