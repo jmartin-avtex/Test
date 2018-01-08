@@ -550,6 +550,11 @@ function cancelBtn_Click() {
 }
 
 function initPage() {
+    document.getElementById('submit2Btn').style.display = 'none';
+    document.getElementById('reset2Btn').style.display = 'none';
+    document.getElementById('hdrHprLnk').style.display = 'none';
+    document.getElementById('cancel2Btn').style.display = 'none';
+    document.getElementById('cancelBtn').style.display = 'none';
     if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.initStyling();
         BRICSTORAGE.Functions.prototype.initPage();
