@@ -558,7 +558,7 @@ function initPage() {
     if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.initStyling();
         BRICSTORAGE.Functions.prototype.initPage();
-    } else if (document.getElementById("user_data_7").value == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "STORAGE-ORDER") {
         BRICAUTH.Functions.prototype.initStyling();
         BRICAUTH.Functions.prototype.initPage();
     } else if (document.getElementById("user_data_7").value == "SALES") {
