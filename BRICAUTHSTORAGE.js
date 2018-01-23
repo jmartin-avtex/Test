@@ -533,7 +533,7 @@ function hdrHprLnk_Click() {
 function resetBtn_Click() {
     if (document.getElementById("user_data_7").value == "STORAGE" || document.getElementById("user_data_7").value == "ACHSTORAGE") {
         BRICSTORAGE.Functions.prototype.resetBtn_Click();
-    } else if (document.getElementById("user_data_7").value == "AUTH") {
+    } else if (document.getElementById("user_data_7").value == "STORAGE-ORDER") {
         BRICAUTH.Functions.prototype.resetBtn_Click();
     } else if (document.getElementById("user_data_7").value == "SALES") {
         BRICSALES.Functions.prototype.resetBtn_Click();
