@@ -66,7 +66,7 @@ var BRICSTORAGE;
         };
         Functions.prototype.initPage = function () {
             // Header Controls
-            document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange - BRIC Storage Demo';
+            document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange';
             // see function hdrHprLnk_Click to set Redirect for hdrHprLnk
             document.getElementById('hdrHprLnk').innerHTML = 'Close / Exit';
             // Body Controls
@@ -216,14 +216,11 @@ var BRICSTORAGE;
             //	document.getElementById('amount').disabled = true;
             document.getElementById('processForm').submit();
         };
-        /*  -----------------------------------------------------------
-            End PayPage JavaScript
-        --------------------------------------------------------------- */
         return Functions;
     }());
     BRICSTORAGE.Functions = Functions;
 })(BRICSTORAGE || (BRICSTORAGE = {}));
-//# sourceMappingURL=EPX_BRICAUTHSTORAGE.js.map
+//# sourceMappingURL=EPX_BRICSTORAGE.js.map
 
 var BRICORDERSTORAGE;
 (function (BRICORDERSTORAGE) {
@@ -293,7 +290,7 @@ var BRICORDERSTORAGE;
         };
         Functions.prototype.initPage = function () {
             // Header Controls
-            document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange - BRIC Storage Demo';
+            document.getElementById('hdr0Lbl').innerHTML = 'Electronic Payment Exchange';
             // see function hdrHprLnk_Click to set Redirect for hdrHprLnk
             document.getElementById('hdrHprLnk').innerHTML = 'Close / Exit';
             // Body Controls
@@ -346,21 +343,12 @@ var BRICORDERSTORAGE;
             document.getElementById('miscMessage2').innerHTML = 'There was a problem with your request.';
             // Footer Controls
             document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
-            if (document.getElementById("user_data_7").value == "ACHSTORAGE") {
-                document.getElementById('radio2Row').style.display = 'none';
-                document.getElementById('radio4Row').style.display = 'none';
-                document.getElementById('radio2RB').style.display = 'none';
-                document.getElementById('radio4RB').style.display = 'none';
-                document.getElementById('radio5RB').onclick = this.tranTypeRadioClick;
-                this.eventFire(document.getElementById('radio5RB'), 'click');
-            }
-            else {
-                document.getElementById('radio2RB').onclick = this.tranTypeRadioClick;
-                document.getElementById('radio5RB').onclick = this.tranTypeRadioClick;
-                //hide debit
-                document.getElementById('radio4Row').style.display = 'none';
-                document.getElementById('radio4RB').onclick = this.tranTypeRadioClick;
-            }
+            document.getElementById('radio2RB').onclick = this.tranTypeRadioClick;
+            document.getElementById('radio5RB').onclick = this.tranTypeRadioClick;
+            //hide debit
+            document.getElementById('radio4Row').style.display = 'none';
+            document.getElementById('radio5Row').style.display = 'none'; //hide ACH 
+            document.getElementById('radio4RB').onclick = this.tranTypeRadioClick;
             document.getElementById('debitDisclaimerRow').style.display = "none";
             document.getElementById('mainDiv').style.display = 'block';
             if (document.getElementById('radio2RB').checked) {
