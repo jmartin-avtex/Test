@@ -444,14 +444,16 @@ var BRICAUTH;
         /*  -----------------------------------------------------------
             PayPage JavaScript
         --------------------------------------------------------------- */
-        /* Image/Text to display when Waiting */
-        Functions.prototype.displayWait = function () {
-            document.getElementById('processingImg').innerHTML = '<img src="images/ani_gears.gif" border=0>';
-            document.getElementById('processingText').innerHTML = 'Processing your transaction, please do not cancel!';
-        };
-        /* Action to take when hdrHprLnk is Clicked */
-        Functions.prototype.hdrHprLnk_Click = function () {
-            location.replace('http://www.epx.com');
+        Functions.prototype.initStyling = function () {
+            document.getElementById('amount').style.width = '8em';
+            document.getElementById('check_nbr').style.width = '8em';
+            document.getElementById('amount').style.border = '0';
+            document.getElementById('amountRow').style.display = 'inline';
+            document.getElementById('chkNumRow').style.display = 'inline';
+            document.getElementById('invoiceNumRow').style.display = 'inline';
+            document.getElementById('radio1Row').style.display = 'inline';
+            document.getElementById('achDisclaimerRow').style.display = 'inline';
+            document.getElementById('debitDisclaimerRow').style.display = 'inline';
         };
         /* Action to take when resetBtn is Clicked */
         Functions.prototype.resetBtn_Click = function () {
@@ -489,14 +491,6 @@ var BRICAUTH;
             document.getElementById('routing_nbr_msg').style.display = 'none';
             document.getElementById('ach_account_nbr_msg').style.display = 'none';
             document.getElementById('check_nbr_msg').style.display = 'none';
-        };
-        /* Action to take when cancelBtn is Clicked */
-        Functions.prototype.cancelBtn_Click = function () {
-            var cancelUrl = document.getElementById('cancelUrl').value;
-            if (cancelUrl.length > 0)
-                location.replace(cancelUrl);
-            else
-                location.replace('http://www.epx.com');
         };
         Functions.prototype.initPage = function () {
             // Header Controls
@@ -557,9 +551,9 @@ var BRICAUTH;
             // Messaging Controls
             document.getElementById('miscMessage1').innerHTML = 'Important Messages';
             document.getElementById('miscMessage2').innerHTML = 'There was a problem with your request.';
-            document.getElementById('submitBtn').onclick = onSubmit;
-            document.getElementById('submit2Btn').onclick = onSubmit;
-            // Footer Controls
+            document.getElementById('submitBtn').onclick = this.onSubmit;
+            document.getElementById('submit2Btn').onclick = this.onSubmit;
+            // Footer Controls 
             document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
             document.getElementById('mainDiv').style.display = 'block';
         };
@@ -571,54 +565,6 @@ var BRICAUTH;
         /*  -----------------------------------------------------------
             End PayPage JavaScript
         --------------------------------------------------------------- */
-        /*  -----------------------------------------------------------
-            Receipt Page JavaScript
-        --------------------------------------------------------------- */
-        /* Action to take when hdrHprLnk is Clicked */
-        Functions.prototype.hdrHprLnkRcpt_Click = function () {
-            location.replace('http://www.epx.com');
-        };
-        Functions.prototype.initRcptPage = function () {
-            // Header Controls
-            document.getElementById('hdr0LblRcpt').innerHTML = 'Electronic Payment Exchange';
-            document.getElementById('hdrHprLnkRcpt').innerHTML = 'Close / Exit';
-            // Buttons Controls
-            document.getElementById('printBtn').value = 'Print';
-            document.getElementById('continueBtn').value = 'Continue';
-            document.getElementById('closeBtn').value = 'Close';
-            // Results Controls
-            document.getElementById('responseTextLbl').value = 'Your transaction was approved!';
-            document.getElementById('respMsgLbl').value = 'Response Text:';
-            document.getElementById('respAuthLbl').value = 'Authorization Number:';
-            document.getElementById('respCodeLbl').value = 'Response Code:';
-            document.getElementById('respGuidLbl').value = 'Reference Guid:';
-            document.getElementById('respAmountLbl').value = 'Amount:';
-            // Receipt Pad Controls
-            document.getElementById('inv_nbrLbl').value = 'Invoice:';
-            document.getElementById('merch_nbrLbl').value = 'Merchant ID:';
-            document.getElementById('batch_idLbl').value = 'Batch ID#:';
-            document.getElementById('tran_idLbl').value = 'Tran ID#:';
-            document.getElementById('server_operLbl').value = 'Operator:';
-            document.getElementById('acct_nbrLbl').value = 'Acct #:';
-            document.getElementById('auth_codeLbl').value = 'Auth Code:';
-            document.getElementById('avs_respLbl').value = 'AVS:';
-            document.getElementById('cvv2_rcpt_Lbl').value = 'CVV:';
-            document.getElementById('guidLbl').value = 'Ref #:';
-            document.getElementById('usrData1Lbl').value = 'User Data 1:';
-            document.getElementById('usrData2Lbl').value = 'User Data 2:';
-            document.getElementById('usrData3Lbl').value = 'User Data 3:';
-            document.getElementById('usrData4Lbl').value = 'User Data 4:';
-            document.getElementById('usrData5Lbl').value = 'User Data 5:';
-            document.getElementById('usrData6Lbl').value = 'User Data 6:';
-            document.getElementById('usrData7Lbl').value = 'User Data 7:';
-            document.getElementById('usrData8Lbl').value = 'User Data 8:';
-            document.getElementById('usrData9Lbl').value = 'User Data 9:';
-            document.getElementById('usrData10Lbl').value = 'User Data 10:';
-            document.getElementById('tran_amountLbl').value = 'Total:';
-            document.getElementById('signature').innerHTML = 'Signature';
-            // Footer Controls
-            document.getElementById('ftr0LblRcpt').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
-        };
         return Functions;
     }());
     BRICAUTH.Functions = Functions;
@@ -827,7 +773,7 @@ function initPage() {
         BRICSTORAGE.Functions.prototype.initPage();
     } else if (document.getElementById("user_data_7").value == "STORAGE-ORDER") {
         BRICORDERSTORAGE.Functions.prototype.initStyling();
-        BRICORDERSTORAGE.Functions.prototype.initPage();
+        BRICORDERSTORAGE.Functions.prototype.initPage(); 
     } else if (document.getElementById("user_data_7").value == "SALES") {
         BRICSALES.Functions.prototype.initStyling();
         BRICSALES.Functions.prototype.initPage();
