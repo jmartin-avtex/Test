@@ -748,7 +748,7 @@ function resetBtn_Click() {
         BRICORDERSTORAGE.Functions.prototype.resetBtn_Click();
     } else if (document.getElementById("user_data_7").value == "AUTH") {
         BRICAUTH.Functions.prototype.resetBtn_Click();
-    } else if (document.getElementById("user_data_7").value == "SALES") {
+    } else if (document.getElementById("user_data_7").value == "SALES" || document.getElementById("user_data_7").value == "SALE") {
         BRICSALES.Functions.prototype.resetBtn_Click();
     }
 }
