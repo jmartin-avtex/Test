@@ -584,7 +584,7 @@ var BRICSALES;
             document.getElementById('zip').style.width = '8em';
             document.getElementById('check_nbr').style.width = '8em';
             document.getElementById('amountRow').style.display = 'inline';
-            document.getElementById('chkNumRow').style.display = 'inline';
+            document.getElementById('chkNumRow').style.display = 'none';
             document.getElementById('invoiceNumRow').style.display = 'none';
             document.getElementById('radio1Row').style.display = 'none';
             document.getElementById('userData1Row').style.display = 'none';
@@ -613,7 +613,6 @@ var BRICSALES;
             document.getElementById('invoice_nbr').value = '';
             document.getElementById('user_data_1').value = '';
             document.getElementById('declinedSP').innerHTML = '';
-
 
             document.getElementById('miscMessageRow').style.display = 'none';
             document.getElementById('miscMessageSpacerRow').style.display = 'none';
