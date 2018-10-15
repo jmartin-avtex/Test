@@ -764,7 +764,7 @@ var BRICREFUND;
             document.getElementById('check_nbr').style.width = '8em';
             document.getElementById('amountRow').style.display = 'inline';
             document.getElementById('chkNumRow').style.display = 'none';
-            document.getElementById('invoiceNumRow').style.display = 'none';
+            document.getElementById('invoiceNumRow').style.display = 'none'; 
             document.getElementById('radio1Row').style.display = 'none';
             document.getElementById('userData1Row').style.display = 'none';
             document.getElementById('acctTypeSRB').style.display = 'none';
@@ -872,6 +872,7 @@ var BRICREFUND;
             // Footer Controls
             document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
             document.getElementById('mainDiv').style.display = 'block';
+            document.getElementById('disclaimerDiv').style.display = 'none';
             document.getElementById('radio4Row').style.display = 'none';
             document.getElementById('radio5Row').style.display = 'none';
             document.getElementById('radio2RB').onclick = this.tranTypeRadioClick;
