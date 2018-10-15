@@ -799,7 +799,7 @@ function initPage() {
     } else if (document.getElementById("user_data_7").value == "STORAGE-ORDER") {
         BRICORDERSTORAGE.Functions.prototype.initStyling();
         BRICORDERSTORAGE.Functions.prototype.initPage();
-    } else if (document.getElementById("user_data_7").value == "SALES" || document.getElementById("user_data_7").value == "SALE") {
+    } else if (document.getElementById("user_data_7").value == "SALES" || document.getElementById("user_data_7").value == "SALE" || document.getElementById("user_data_7").value == "REFUND") {
         BRICSALES.Functions.prototype.initStyling();
         BRICSALES.Functions.prototype.initPage();
     } else if (document.getElementById("user_data_7").value == "AUTH") {
