@@ -878,6 +878,12 @@ var BRICREFUND;
             document.getElementById('radio2RB').onclick = this.tranTypeRadioClick;
             document.getElementById('radio2RB').checked = true;
             Functions.prototype.eventFire(document.getElementById('radio2RB'), 'click');
+            document.getElementById('submitBtn').onclick = this.onSubmit;
+        };
+        Functions.prototype.onSubmit = function () {
+            disableSubmit(true);
+            document.getElementById('tran_code').value = 'REFUND';
+            document.getElementById('processForm').submit();
         };
         Functions.prototype.eventFire = function (el, etype) {
             if (el.fireEvent) {
