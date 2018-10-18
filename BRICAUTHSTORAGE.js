@@ -872,6 +872,7 @@ var BRICREFUND;
             // Footer Controls
             document.getElementById('ftr0Lbl').innerHTML = "Powered by EPX (<a href='javascript:showEPX();'>www.epx.com</a>)";
             document.getElementById('mainDiv').style.display = 'block';
+            document.getElementById('cvv2Row').style.display = 'none';
             document.getElementById('disclaimerDiv').style.display = 'none';
             document.getElementById('radio4Row').style.display = 'none';
             document.getElementById('radio5Row').style.display = 'none';
